@@ -14,11 +14,13 @@
 }
 
 .App-link {
+  cursor: pointer;
   color: #61dafb;
+  font-size: 12px;
+  text-align: left;
 }
 
 .App-list-item {
-  cursor: pointer;
   font-size: 12px;
   text-align: left;
 }

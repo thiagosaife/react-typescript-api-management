@@ -9,8 +9,6 @@ type State = {
   cardsList: string[]
 }
 
-
-
 class CardsList extends Component<Props, State> {
   constructor(props: Props) {
     super(props)
@@ -43,7 +41,7 @@ class CardsList extends Component<Props, State> {
                   (c: any, i: number) =>
                     <li
                       onClick={() => this.handleSearch(c.multiverseid)}
-                      className='App-list-item'
+                      className={c.multiverseid ? 'App-link' : 'App-list-item'}
                       key={i}
                       title={c.multiverseid ? c.name : 'Sem registro'}
                     >
